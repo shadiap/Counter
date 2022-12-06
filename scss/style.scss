@@ -1,0 +1,31 @@
+$white : #fbfae0;
+$purple :#e6b7e9;
+$blue : #5ef296;
+$red : #e6618d;
+
+@mixin transition {
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;;
+}
+body{
+    background-color: $purple;
+    color: $red;
+}
+.button{
+    background-color: $blue;
+    border: 1px solid gray;
+    width: 200px;
+    height: 100px;
+    @include transition;
+}
+.button:hover{
+    background-color: $white;
+    box-shadow: 3px 3px;
+    border-radius: 4px;
+    
+}
+#number{
+    font-size: large;
+    color: black;
+}
